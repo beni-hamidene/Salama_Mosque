@@ -5,20 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>المدرسة القرآنية بمسجد سلمة بن الأكوع - بني حميدان</title>
 
-<!-- CSS مدمج هنا -->
 <style>
 :root{
-  --bg-1: #071426;
-  --bg-2: #0b2a3f;
-  --glass: rgba(255,255,255,0.06);
-  --glass-strong: rgba(255,255,255,0.10);
-  --accent: rgba(255, 215, 102, 0.95);
-  --accent-soft: rgba(255,215,102,0.14);
-  --text: #eaf6ff;
-  --muted: rgba(234,246,255,0.7);
-  --card-radius: 14px;
-  --max-width: 980px;
-  --glass-border: rgba(255,255,255,0.08);
+  --bg-1:#071426;
+  --bg-2:#0b2a3f;
+  --glass:rgba(255,255,255,0.06);
+  --glass-strong:rgba(255,255,255,0.10);
+  --accent:#ffd766;
+  --accent-soft:rgba(255,215,102,0.14);
+  --text:#eaf6ff;
+  --muted:rgba(234,246,255,0.7);
+  --card-radius:16px;
+  --max-width:980px;
+  --glass-border:rgba(255,255,255,0.08);
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
@@ -29,9 +28,10 @@ body{
   color:var(--text);
   direction:rtl;
   line-height:1.6;
-  padding:40px 20px;
+  padding:30px 15px;
 }
 
+/* الصور الخلفية في الهيدر */
 .wrap{
   max-width:var(--max-width);
   margin:0 auto;
@@ -43,44 +43,75 @@ body{
 .card{
   background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
   border-radius:var(--card-radius);
-  padding:20px;
+  padding:22px;
   box-shadow:0 6px 20px rgba(3,6,10,0.5);
   border:1px solid var(--glass-border);
-  backdrop-filter: blur(8px) saturate(120%);
+  backdrop-filter: blur(10px) saturate(120%);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+.card:hover{transform: translateY(-4px); box-shadow:0 18px 36px rgba(3,6,10,0.5);}
 
 .glass-header{
   display:flex;
   flex-direction:column;
-  gap:8px;
-  padding:26px 22px;
+  gap:10px;
+  padding:28px 22px;
   text-align:center;
+  background: url('https://images.unsplash.com/photo-1558237337-61b4c4892b4e?auto=format&fit=crop&w=1000&q=60') center/cover no-repeat;
+  border-radius:var(--card-radius);
 }
 
-h1{font-size:clamp(20px,3.5vw,30px);}
-.location{color:var(--muted); font-size:14px;}
+h1{
+  font-size:clamp(22px,4vw,34px);
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+}
+.location{color:var(--muted); font-size:15px; text-shadow:0 0 2px rgba(0,0,0,0.3);}
 
-.intro{border-left:4px solid var(--accent); padding:18px;}
-.islamic-glow{box-shadow:0 8px 40px rgba(255,215,102,0.06),0 2px 6px rgba(0,0,0,0.4);}
+.intro{border-left:5px solid var(--accent); padding:20px; background:var(--glass-strong);}
+.islamic-glow{box-shadow:0 10px 40px rgba(255,215,102,0.08),0 4px 8px rgba(0,0,0,0.4);}
 
-h2{font-size:18px; margin-bottom:12px;}
-ul{list-style:none; display:flex; flex-direction:column; gap:10px;}
-ul li{padding:8px 12px; border-radius:10px; background: linear-gradient(90deg, rgba(255,255,255,0.01), rgba(0,0,0,0.02)); border: 1px solid rgba(255,255,255,0.02);}
+h2{font-size:19px; margin-bottom:14px; color:var(--accent);}
+ul{list-style:none; display:flex; flex-direction:column; gap:12px;}
+ul li{
+  padding:10px 14px; border-radius:12px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.01), rgba(0,0,0,0.02));
+  border: 1px solid rgba(255,255,255,0.02);
+}
+
 .card strong{color:var(--accent); font-weight:700}
 
-.center-btn{display:flex; justify-content:center; margin-top:14px;}
+.center-btn{display:flex; justify-content:center; margin-top:16px;}
 .register-btn{
-  display:inline-block; text-decoration:none; padding:12px 22px; border-radius:999px;
+  display:inline-block; text-decoration:none; padding:14px 28px; border-radius:999px;
   font-weight:700; box-shadow:0 8px 30px rgba(3,6,10,0.45);
   border:1px solid rgba(255,255,255,0.08);
-  background: linear-gradient(180deg, rgba(255,215,102,0.12), var(--accent-soft));
+  background: linear-gradient(180deg, rgba(255,215,102,0.14), var(--accent-soft));
   color:#082029;
-  transition:transform .15s ease, box-shadow .15s ease;
+  transition: transform .15s ease, box-shadow .15s ease, background .3s ease;
 }
-.register-btn:hover{transform:translateY(-4px); box-shadow:0 18px 36px rgba(3,6,10,0.5);}
+.register-btn:hover{
+  transform:translateY(-5px);
+  box-shadow:0 20px 40px rgba(3,6,10,0.5);
+  background: linear-gradient(180deg, var(--accent-soft), var(--accent));
+}
 
-.note{margin-top:10px;color:rgba(234,246,255,0.75); font-size:13px;}
-.glass-footer{text-align:center; padding:18px; font-size:13px; color:rgba(234,246,255,0.7); border-radius:12px;}
+.note{margin-top:12px;color:rgba(234,246,255,0.75); font-size:13px;}
+.glass-footer{
+  text-align:center;
+  padding:20px;
+  font-size:14px;
+  color:rgba(234,246,255,0.7);
+  border-radius:14px;
+  background:var(--glass-strong);
+  backdrop-filter: blur(8px) saturate(120%);
+}
+
+@media(max-width:600px){
+  h1{font-size:22px;}
+  h2{font-size:17px;}
+  ul li{padding:8px 12px;}
+  .register-btn{padding:10px 20px;}
+}
 </style>
 </head>
 <body>
