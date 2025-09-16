@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المدرسة القرآنية بمسجد سلمة بن الأكوع - بني حميدان</title>
+
+<!-- CSS مدمج هنا -->
+<style>
+:root{
+  --bg-1: #071426;
+  --bg-2: #0b2a3f;
+  --glass: rgba(255,255,255,0.06);
+  --glass-strong: rgba(255,255,255,0.10);
+  --accent: rgba(255, 215, 102, 0.95);
+  --accent-soft: rgba(255,215,102,0.14);
+  --text: #eaf6ff;
+  --muted: rgba(234,246,255,0.7);
+  --card-radius: 14px;
+  --max-width: 980px;
+  --glass-border: rgba(255,255,255,0.08);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family:"Noto Sans Arabic","Tajawal",system-ui,-apple-system,"Segoe UI",Roboto,Arial;
+  background: linear-gradient(160deg,var(--bg-1) 0%, var(--bg-2) 60%);
+  color:var(--text);
+  direction:rtl;
+  line-height:1.6;
+  padding:40px 20px;
+}
+
+.wrap{
+  max-width:var(--max-width);
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.card{
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius:var(--card-radius);
+  padding:20px;
+  box-shadow:0 6px 20px rgba(3,6,10,0.5);
+  border:1px solid var(--glass-border);
+  backdrop-filter: blur(8px) saturate(120%);
+}
+
+.glass-header{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  padding:26px 22px;
+  text-align:center;
+}
+
+h1{font-size:clamp(20px,3.5vw,30px);}
+.location{color:var(--muted); font-size:14px;}
+
+.intro{border-left:4px solid var(--accent); padding:18px;}
+.islamic-glow{box-shadow:0 8px 40px rgba(255,215,102,0.06),0 2px 6px rgba(0,0,0,0.4);}
+
+h2{font-size:18px; margin-bottom:12px;}
+ul{list-style:none; display:flex; flex-direction:column; gap:10px;}
+ul li{padding:8px 12px; border-radius:10px; background: linear-gradient(90deg, rgba(255,255,255,0.01), rgba(0,0,0,0.02)); border: 1px solid rgba(255,255,255,0.02);}
+.card strong{color:var(--accent); font-weight:700}
+
+.center-btn{display:flex; justify-content:center; margin-top:14px;}
+.register-btn{
+  display:inline-block; text-decoration:none; padding:12px 22px; border-radius:999px;
+  font-weight:700; box-shadow:0 8px 30px rgba(3,6,10,0.45);
+  border:1px solid rgba(255,255,255,0.08);
+  background: linear-gradient(180deg, rgba(255,215,102,0.12), var(--accent-soft));
+  color:#082029;
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.register-btn:hover{transform:translateY(-4px); box-shadow:0 18px 36px rgba(3,6,10,0.5);}
+
+.note{margin-top:10px;color:rgba(234,246,255,0.75); font-size:13px;}
+.glass-footer{text-align:center; padding:18px; font-size:13px; color:rgba(234,246,255,0.7); border-radius:12px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="glass glass-header">
+    <h1>المدرسة القرآنية بمسجد سلمة بن الأكوع</h1>
+    <p class="location">المكان: مسجد سلمة بن الأكوع — بلدية بني حميدان</p>
+  </header>
+
+  <div class="card glass intro islamic-glow">
+    <p>تعلن <strong>المدرسة القرآنية بمسجد سلمة بن الأكوع</strong> ببلدية بني حميدان، عن فتح التسجيلات لحفظ القرآن الكريم لفائدة <strong>المتخرجين من الجامعة</strong> ولم يتحصلوا على شغل بعد.</p>
+  </div>
+
+  <section class="card glass">
+    <h2 class="conditions-title">شروط الالتحاق بالمدرسة</h2>
+    <ul>
+      <li>المستوى الدراسي جامعي للذكور والإناث.</li>
+      <li>التفرغ التام للدراسة اليومية، ما عدا يوم الجمعة.</li>
+      <li>السلامة من الأمراض المعيقة عن الدراسة.</li>
+      <li>الالتزام بنظام المدرسة والسلوك الحسن.</li>
+      <li>ملء استمارة التسجيل الإلكترونية.</li>
+      <li>التسجيل الورقي يكون عند انطلاق الدراسة.</li>
+    </ul>
+    <div class="center-btn">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeC_qg2UeXGecIhJ8lwiwco0bAv__QEP-v5yNUqcawHl0W2nA/viewform?usp=dialog" target="_blank" class="register-btn">التسجيل الإلكتروني</a>
+    </div>
+  </section>
+
+  <section class="card glass">
+    <h2 class="services-title">ماذا تقدم المدرسة؟</h2>
+    <ul>
+      <li>حفظ القرآن الكريم كاملاً في مدة عامين؛ أي بمعدل ثُمن حزب يومياً.</li>
+      <li>دروس في أحكام التجويد (حفظ متن الجزرية ومتن الدرر اللوامع).</li>
+      <li>إجازة برواية ورش من طريق الأزرق للطلبة المتميزين فقط.</li>
+      <li>الدراسة مجانية عدا حقوق التسجيل والتأمين.</li>
+    </ul>
+  </section>
+
+  <section class="card glass">
+    <h2 class="no-services-title">خدمات لا توفرها المدرسة</h2>
+    <ul>
+      <li>الإطعام</li>
+      <li>النقل</li>
+      <li>الإيواء</li>
+      <li>لا توجد منحة دراسية</li>
+    </ul>
+    <p class="note">ملاحظة: هذه الخدمات مرتبطة بوجود المحسنين</p>
+  </section>
+
+  <footer class="glass glass-footer">
+    &copy; 2025 المدرسة القرآنية بمسجد سلمة بن الأكوع - بني حميدان.
+  </footer>
+</div>
+</body>
+</html>
